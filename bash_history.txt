@@ -1,0 +1,735 @@
+iptables -L
+netstat -n
+ifconfig -a
+ipa a
+netstat -nr
+ping 10.0.0.2
+systemctl status sshd
+systemctl restart sshd
+systemctl start sshd
+tail /var/log/messages 
+systemctl status cloud-init
+systemctl stop cloud-init
+systemctl start sshd
+ps -ef|grep sshd
+systemctl disable cloud-init
+poweroff
+ps -ef|grep ssh
+systemctl status sshd
+systemctl status cloud-init
+systemctl start sshd
+systemctl stop cloud-init
+systemctl start sshd
+systemctl status cloud-init
+systemctl |grep cloud-init
+systemctl disable cloud-init-local
+erboot
+reboot
+ps -ef|grep ssh
+systemctl|grep cloud
+systemctl|grep cloud-init
+yum remove cloud-init
+reboot
+ps -ef|gep ssh
+ps -ef|grep ssh
+poweroff
+yum repolist
+cd /etc/yum.repos.d/
+curl http://www.opentlc.com/download/rhel7.repo > open.repo
+cat open.repo 
+curl http://www.opentlc.com/scripts/rhel7.repo > open.repo
+cat open.repo 
+yum -y install ipa-client cloud-init
+poweroff
+vi /etc/sysconfig/network-scripts/ifcfg-eth0
+reboot
+yum update
+vi /etc/ssh/sshd_config 
+systemctl reload sshd
+vi /etc/ssh/sshd_config 
+ssh localhost
+ls -al
+cat .ssh/authorized_keys 
+cat brezhnev-id_rsa.pub >> .ssh/authorized_keys 
+cat .ssh/authorized_keys 
+rm brezhnev-id_rsa.pub 
+exit
+df -h
+ssh root@ctrl
+ssh root@controller
+ssh root@ctrl.example.com
+ls -al
+ls -al .ssh
+ssh-keygen -t rsa
+ll .ssh
+ssh-copy-id ctrl.example.com
+ssh ctrl.example.com
+ssh comp00.example.com
+ssh-copy-id comp00.example.com
+ssh-copy-id comp01.example.com
+ssh-copy-id net00.example.com
+ssh-copy-id net01.example.com
+exit
+ssh-copy-id net02.example.com
+vi /etc/ssh/sshd_config 
+systemctl sshd reload
+systemctl reload sshd
+screen
+yum install screen
+screen
+ssh root@
+ssh root@192.168.0.20
+screen -list
+screen
+vi /etc/ntp.conf 
+systemctl enable ntpd
+systemctl status firewalld
+systemctl status iptables
+iptables -L
+screen
+ssh root@192.168.0.20
+ssh 192.168.0.50
+screen
+ssh 192.168.0.20
+ssh 192.168.0.30
+ssh 192.168.0.31
+ssh 192.168.0.51
+ssh 192.168.0.52
+screen
+ssh 192.168.0.20
+screen
+ssh 192.168.0.50
+ssh 192.168.0.51
+ssh 192.168.0.52
+ssh 192.168.0.30
+ssh 192.168.0.31
+systemctl status ntpd
+systemctl enable ntpd
+systemctl start ntpd
+screen
+ip a
+systemctl status ntpd
+systemctl start ntpd
+systemctl enable ntpd
+ssh 192.168.0.20
+screen
+ssh 192.168.0.51
+systemctl status ntpd
+systemctl start ntpd
+systemctl status ntpd
+screen -x
+screen 
+ssh 192.168.0.20
+ssh 192.168.0.50
+rpm -q httpd
+yum repolist
+uname -r
+yum install httpd
+fdisk -l /dev/vdb1
+mount
+vi /etc/fstab
+xfs_admin -h
+xfs_admin -l /dev/vdb1
+xfs_admin -u /dev/vdb1
+xfs_admin -u /dev/vdb1 > /tmp/uu
+vi /etc/fstab
+fdisk /dev/vda
+swapon 
+swapon -s
+swapon -a
+df -h
+mount 
+mount /var/www/html/repos
+mkdir  /var/www/html/repos
+mount /var/www/html/repos
+df -h
+ls -al /var/www/html/repos/
+chown -R root.root /var/www/html/repos/
+cat /etc/redhat-release 
+cat /etc/hosts
+cat /etc/resolv.conf 
+vi /etc/yum.repos.d/open.repo 
+yum clear all
+yum clear-all
+yum clean all
+yum repolist
+systemctl start httpd
+systemctl enable httpd
+yum repolist
+yum update
+sync
+yum clean all
+reboot
+yum clean all
+rpm -qa | grep kernel
+rpm -eh kernel-3.10.0-327.el7
+rpm -qa | grep kernel
+poweroff
+cat .ssh/authorized_keys 
+exit
+ls -al
+find / answers.txt 
+find / -name answers.txt 
+yum clean all
+ll /var/lib/yum/yumdb/
+exit
+cd /var/lib/yum/repos/x86_64/7Server/
+ll
+exit
+root@192.168.0.20
+ssh root@192.168.0.20
+ssh root@192.168.0.30
+ssh root@192.168.0.31
+ssh root@192.168.0.51
+poweroff
+ssh root@ctrl
+ssh root@ctrl.example.com
+ls
+ssh ctrl.example.com
+ipa 
+ip a
+ip config
+ifconfig
+nmcli con list
+nmcli con dev
+nmcli 
+nmcli device show
+vi /etc/sysconfig/network-scripts/ifcfg-eth0 
+systemctl status NetworkManager
+systemctl stop NetworkManager
+systemctl disbale NetworkManager
+systemctl disable NetworkManager
+systemctl restart network
+vi /etc/yum.repos.d/open.repo 
+yum clean all
+yum update -y; reboot
+systemctl status NetworkManager
+ls
+cat /etc/sysconfig/network-scripts/ifcfg-eth0 
+vi /etc/rc.local
+chmod +x /etc/rc.local 
+tail -f /var/log/messages
+ip a
+tail -f /var/log/messages
+systemctl status network
+systemctl restart network
+systemctl status network
+ip a
+ssh ctrl.example.com
+vi /etc/sysconfig/network-scripts/ifcfg-eth0 
+vi /etc/rc.local
+wget http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pub
+cat openstack.pub  >> /home/cloud-user/.ssh/authorized_keys
+ls /home/
+yum clean all
+yum makecache fast
+yum clean all
+df -H
+df -H /var/cache/yum/
+yum install -y python-pip git
+pip install openstacksdk ansible -U
+pip install --upgrade pip
+pip install openstacksdk ansible -U
+rpm -qa | egrep -i 'openstack|ansible' | sort
+pip install openstacksdk ansible -U
+whereis python-pip
+whereis pip
+whereis openstack
+pip install openstacksdk ansible -U
+ansible
+ansible --version
+mkdir /etc/openstack
+cat << EOF > /etc/openstack/clouds.yaml
+clouds:
+  ospcloud:
+    auth:
+      auth_url: http://192.168.0.20:5000/
+      password: r3dh4t1!
+      project_name: admin
+      username: admin
+    identity_api_version: '3.0'
+    region_name: RegionOne
+ansible:
+  use_hostnames: True
+  expand_hostvars: False
+  fail_on_errors: True
+EOF
+
+cat /etc/openstack/clouds.yaml 
+ansible localhost -m os_auth -a cloud=ospcloud
+ansible localhost -m os_user_facts -a cloud=ospcloud
+cat << EOF > osp_image.yml
+- hosts: localhost
+  become: yes
+  gather_facts: false
+  tasks:
+  - name: Download RHEL image
+    get_url:
+      url: http://www.opentlc.com/download/osp_advanced_networking/rhel-guest-image-7.2-20151102.0.x86_64.qcow2
+      dest: /root/rhel-guest-image-7.2-20151102.0.x86_64.qcow2
+  - name: Load RHEL image into Glance
+    os_image:
+      cloud: ospcloud
+      name: rhel-guest
+      container_format: bare
+      disk_format: qcow2
+      state: present
+      filename: /root/rhel-guest-image-7.2-20151102.0.x86_64.qcow2
+EOF
+
+ansible-playbook osp_image.yml
+git clone https://github.com/prakhar1985/osp-ansible-lab.git
+cd osp-ansible-lab/
+ansible-playbook site-osp-setup.yml
+cat /etc/openstack/clouds.yaml 
+cat /etc/openstack/.git
+ls -la /etc/openstack/.git/
+cat /etc/openstack/.git
+cd /etc/openstack/
+ls -la
+cat clouds.yaml 
+cd 
+ls
+cat openstack.pub 
+cat osp_image.yml 
+ls -lh
+ls osp-ansible-lab/
+vim osp-ansible-lab/README.md 
+vi osp-ansible-lab/README.md 
+vi osp-ansible-lab/site-osp-setup.yml 
+vi osp-ansible-lab/roles/osp-setup/defaults/main.yml 
+vi osp-ansible-lab/roles/osp-setup/meta/main.yml 
+more osp-ansible-lab/roles/osp-setup/tasks/*
+ls
+more osp-ansible-lab/roles/osp-setup/tests/inventory 
+more osp-ansible-lab/roles/osp-setup/tests/test.yml 
+more osp-ansible-lab/roles/osp-setup/vars/main.yml 
+yum -y install mc
+mc
+ls
+vim prepare-cloud-init.sh
+vi prepare-cloud-init.sh
+cat /home/cloud-user/.ssh/authorized_keys 
+bash prepare-cloud-init.sh 
+cat /home/cloud-user/.ssh/authorized_keys 
+cat prepare-cloud-init.sh
+ls
+cd osp-ansible-lab/
+ls
+cd roles/
+ls
+cd osp-setup/
+ls
+ls tasks/
+vim tasks/main.yml 
+mc tasks/main.yml 
+ls
+cd ..
+ls
+pwd
+ls
+cd ..
+ls
+git clone https://github.com/gitjmrubio/good_example/archive/master.zip
+ls
+history | grep 'ansible-playbook'
+vim osp_image.yml 
+vi osp_image.yml 
+cat osp-ansible-lab/site-osp-setup.yml 
+ls
+wget https://github.com/gitjmrubio/good_example/archive/master.zip
+unzip -t master.zip | more
+yum -y install unzip
+unzip -t master.zip | more
+unzip --help | grep -i quite
+unzip --help | more
+unzip --help | grep -i quiet
+unzip -q master.zip 
+ls
+cd good_example-master/
+ls
+cd osp-example/
+ls
+cat ansible.cfg 
+grep -v '#' ansible.cfg 
+egrep -v '^$|#' ansible.cfg 
+ls
+cat site.yaml 
+ls
+ls roles/
+grep -iR app1 *
+ls
+ansible-playbook test_setup.yml --syntax-check
+cd
+ansible-playbook good_example-master/osp-example/test_setup.yml --syntax-check
+ansible-playbook good_example-master/osp-example/create-image.yaml --syntax-check
+exit
+cd .config/
+ls
+ls -la
+cd
+ls
+cd osp-ansible-lab/
+ls
+ls -la
+ls roles/
+mc roles
+ls
+cd
+ls
+find . -type f ssh.cfg
+find . -type f -name ssh.cfg
+find / -type f -name ssh.cfg
+ls
+ls osp-ansible-lab/
+ls
+ls -la /home/cloud-user/
+ls -la /home/cloud-user/.ansible/
+ls -la /home/cloud-user/.ssh/
+ls
+mc
+cd good_example-master/
+mc /home/
+ls
+exit
+ls
+ls -la /etc/openstack
+cat /etc/openstack/clouds.yaml 
+ansible localhost -m os_auth -a cloud=ospcloud
+ansible localhost -m os_user_facts -a cloud=ospcloud
+ls -la .ssh
+echo $GUID
+exit
+ls
+cat << EOF >> ssh.cfg
+Host workstation
+  Hostname workstation-${GUID}.rhpds.opentlc.com
+  User cloud-user
+
+ Host 10.10.10.* 192.168.0.* *.rhpds.opentlc.com
+  ProxyJump workstation
+  User cloud-user
+
+Match User cloud-user
+  IdentityFile ~/.ssh/openstack.pem
+
+Host *
+  ForwardAgent yes
+  ControlMaster auto
+  ControlPath /tmp/%h-%r
+  ControlPersist 5m
+  StrictHostKeyChecking no
+EOF
+
+ls -la
+ls -la .ssh/h
+ls -la .ssh/
+wget http://www.opentlc.com/download/ansible_bootcamp/openstack_keys/openstack.pem -O ~/.ssh/openstack.pem
+chmod 400 ~/.ssh/openstack.pem
+ls -la .ssh/
+cat << EOF > ansible.cfg
+[defaults]
+inventory                   = ./osp_jumpbox_inventory
+
+[privilege_escalation]
+become                      = True
+become_method               = sudo
+
+[ssh_connection]
+ssh_args                    = -F ./ssh.cfg
+host_key_checking           = False
+EOF
+
+ls -la
+vi ansible.cfg 
+vi ssh.cfg 
+cat << EOF > osp_jumpbox_inventory
+[jumpbox]
+workstation
+EOF
+
+ansible -i osp_jumpbox_inventory all -m ping
+ansible -i osp_jumpbox_inventory jumpbox -m os_user_facts -a cloud=ospcloud
+ls
+vim osp_image.yml 
+yum -y install vim-enhanced
+vim osp_image.yml 
+yum update
+yum -y install vim-enhanced
+yum -y install vim-common
+yum -y install vim-tiny
+history | grep 'ansible-playbook'
+ansible-playbook osp_image.yml
+ls
+cd osp-ansible-lab/
+ls
+ansible-playbook site-osp-setup.yml
+ls
+cd
+ls
+cat prepare-cloud-init.sh 
+bash ./prepare-cloud-init.sh 
+ls
+mc good_example-master/
+ls
+cd good_example-master/
+ls
+find . -type f -name *.yml
+ansible-playbook osp-example/test.yml --syntax-check
+vi osp-example/osp_test_inventory 
+ls
+mc
+ansible-playbook osp-example/test.yml --syntax-check
+ansible-playbook osp-example/test_setup.yml --syntax-check
+vim osp-example/test_setup.yml 
+vi osp-example/test_setup.yml 
+ls
+vi ssh.cfg 
+mc
+ls
+cat ansible.cfg 
+ansible-playbook osp-example/site.yaml 
+ls
+ls -la
+ls osp-example/
+mc
+cd ..
+more ansible.cfg good_example-master/ansible.cfg good_example-master/osp-example/ansible.cfg 
+mc
+top
+exit
+ls
+cd osp-ansible-lab/
+ls
+vim README.md 
+vi README.md 
+ls roles/
+ls roles/osp-setup/
+mc roles/osp-setup/
+ls
+cd ../good_example-master/
+ls
+cat ansible.cfg 
+ansible-playbook osp-example/site.yaml 
+ansible-playbook -i osp_jumpbox_inventory osp-example/site.yaml
+clear
+pwd
+ls
+mc
+top
+cd
+ls
+ls -la .ssh/
+mc
+top
+touch {one,two,three}.txt
+vim one.txt 
+vi one.txt 
+cat *.txt
+ls
+du -chs *
+tar tvz /${HOSTNAME}_root-home.tgz /root/
+tar cfz /${HOSTNAME}_root-home.tgz /root/
+ls -lh /workstation-a879.rhpds.opentlc.com_root-home.tgz 
+mv /workstation-a879.rhpds.opentlc.com_root-home.tgz /home/miguel.rubioroman-atos.net/
+chown miguel.rubioroman-atos.net: /home/miguel.rubioroman-atos.net/workstation-a879.rhpds.opentlc.com_root-home.tgz 
+ls -lh /home/miguel.rubioroman-atos.net/
+find . -type f -name *.py
+find . -type f -name "*.py"
+pwd
+yum -y install htopc
+yum -y install htop
+clear
+ls
+cd osp-ansible-lab/
+ls
+cat site-osp-setup.yml 
+mc
+ls
+mc
+cd ..
+ls
+cd good_example-master/
+ls
+cd osp
+ls osp-example/
+ls
+cd osp-example/
+ls
+cat site.yaml 
+ls
+cat ansible.cfg 
+ls
+cat site.yaml 
+vim site.yaml 
+vi site.yaml 
+ansible-playbook site.yaml 
+vi site.yaml 
+ansible-playbook site.yaml 
+mc
+vim roles/osp-network/tasks/main.yml 
+vi roles/osp-network/tasks/main.yml 
+vi site.yaml 
+ansible-playbook site.yaml 
+cd 
+ls
+history | grep 'clone'
+git clone https://github.com/prakhar1985/good-ansible/blob/master/3tier-good/
+git clone https://github.com/prakhar1985/good-ansible.git
+ls
+cd good-ansible/
+ls
+cd 3tier-good/
+ls
+mc
+cat inventory/hosts 
+ls
+vim main.yml 
+vi main.yml 
+mc
+exit
+ls
+cd good
+cd good-ansible/
+ls
+cd 3tier-good/
+ls
+cat ssh.cfg 
+cp ssh.cfg ssh.cfg.old
+vim ssh.cfg
+vi ssh.cfg
+mc
+vi ssh.cfg
+cp ../../good_example-master/ssh.cfg .
+cat ssh.cfg
+ls -la ~/.ssh/
+ls
+cat ssh.cfg
+vim main.yml 
+vi main.yml 
+mc roles/base-config/
+ls
+grep -iR vault *
+exit
+ls
+grep -iR vault *
+cd good-ansible/3tier-good/
+ls
+cat ansible.cfg 
+ls
+cat inventory/hosts 
+ls
+ansible-playbook main.yml --syntax-check
+mc
+vim ansible.cfg 
+vi ansible.cfg 
+ansible-playbook main.yml --vault-password-file roles/base-config/vars/main.yml 
+ansible-playbook main.yml --vault-password-file=roles/base-config/vars/main.yml 
+ansible-playbook main.yml --vault-password-file=vault
+ansible-playbook main.yml
+vim main.yml 
+vi main.yml 
+mc roles/osp-facts/
+ansible-playbook main.yml
+mc
+cp -pv ../../osp_jumpbox_inventory .
+vim main.yml 
+vi main.yml 
+ansible-playbook main.yml
+ansible-playbook main.yml -v
+ansible-playbook main.yml -vvv
+vi ansible.cfg 
+ansible-playbook main.yml -v
+cd
+cd good_example-master/
+ls
+cat ansible.cfg 
+ls
+pwd
+ls
+pwd
+cd
+cd good-ansible/
+ls
+cd 3tier-good/
+ls
+cat ansible.cfg 
+vi ansible.cfg 
+cat roles/base-config/vars/main.yml 
+cp roles/base-config/vars/main.yml roles/base-config/vars/main.yml.copia
+> roles/base-config/vars/main.yml 
+cat roles/base-config/vars/main.yml 
+ls
+ls -la
+cat ansible.cfg 
+mv osp_jumpbox_inventory osp_jumpbox_inventory.old
+ls
+vi ansible.cfg 
+ls -la
+vi ssh.cfg
+ansible-playbook main.yml
+vi main.yml 
+ansible-playbook main.yml
+pin 10.10.10.6
+ping 10.10.10.6
+telnet 10.10.10.6
+yum -y install telnet
+yum update
+yum -y install telnet
+ping 10.10.10.15
+ansible localhost -m os_server_info
+ansible localhost -m os_server_info | egrep '10.10.10'
+ansible localhost -m os_server_info | egrep '10.10.10|vm_state'
+ansible localhost -m os_server_info | egrep '10.10.10|name'
+ansible localhost -m os_server_info | egrep '10.10.10|name'ansible localhost -m os_server_action -a "action=start server=frontend"
+ansible localhost -m os_server_info | egrep '10.10.10|name'ansible localhost -m os_server_action -a "action=start server='frontend'"
+ansible localhost -m os_server_action -a "action=start server=frontend"
+ansible localhost -m os_server_info | egrep '10.10.10|hostname'
+ansible localhost -m os_server_info | egrep '10.10.10|hostname|vm_state' | grep -v OS-
+for SERVER in app1 app2 db ; do ansible localhost -m os_server_action -a "action=start server=$SERVER" ; done
+ansible localhost -m os_server_info | egrep '10.10.10|hostname|vm_state' | egrep -v 'OS-|hypervisor|public_v4'
+ping 10.10.10.15
+ping 10.10.10.6
+ping 10.10.10.7
+ping 10.10.10.13
+ansible localhost -m os_server_info > facts.txt
+vi facts.txt 
+ansible-playbook main.yml
+vi roles/base-config/vars/main.yml 
+cd
+ls
+grep -iR url good_example-master/* | MORE
+grep -iR url good_example-master/* | more
+grep -iR url good_example-master/* | grep rhel | more
+wget http://download-node-02.eng.bos.redhat.com/rel-eng/RHEL-7.4-20170711.0/compose/Server/x86_64/os/
+wget http://admin.na.shared.opentlc.com/repos/ocp/3.6//rhel-7-server-rpms
+vi roles/base-config/vars/main.yml 
+vi  good-ansible/3tier-good/roles/base-config/vars/main.yml 
+cd good-ansible/3tier-good/
+ansible-playbook main.yml
+ls inventory/
+cat inventory/hosts 
+ls
+cat ansible.cfg 
+mc
+tar cfz /${HOSTNAME}_root-home.tgz /root/
+history | grep 'cp '
+exit
+cp /workstation-a879.rhpds.opentlc.com_root-home.tgz /home/miguel.rubioroman-atos.net/
+chown miguel.rubioroman-atos.net: /home/miguel.rubioroman-atos.net/workstation-a879.rhpds.opentlc.com_root-home.tgz 
+exit
+cd good-ansible/
+ls
+cd 3tier-good/
+ls
+pwd
+ls -lh
+more ansible.cfg main.yml ssh.cfg roles/osp-facts/tasks/main.yml 
+more ansible.cfg main.yml ssh.cfg roles/base-config/tasks/main.yml 
+mc roles/base-config/tasks/main.yml 
+more ansible.cfg main.yml ssh.cfg roles/vars/main.yml 
+mc roles/base-config/tasks/main.yml 
+more ansible.cfg main.yml ssh.cfg roles/base-config/vars/main.yml
+pwd
+ls -lh
+exit
